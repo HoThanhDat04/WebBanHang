@@ -1,0 +1,12 @@
+.icon-container {
+    display: flex;
+    justify-content: center; /* Căn giữa icon */
+    align-items: center;
+    gap: 15px; /* Khoảng cách giữa các icon */
+  }
+  
+  .icon-container img {
+    width: 50px; /* Định kích thước icon */
+    height: 50px;
+  }
+  

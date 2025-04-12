@@ -1,0 +1,77 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+  body {
+    background-color: #fff0f5; /* nền hồng nhạt */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Container giỏ hàng */
+  .cart-container {
+    background-color: #fff;
+    padding: 30px;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  }
+  
+  /* Tiêu đề */
+  .cart-container h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Danh sách sản phẩm */
+  .cart-container ul {
+    list-style: none;
+    margin-bottom: 20px;
+  }
+  
+  .cart-container li {
+    background-color: #fafafa;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    border: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    color: #444;
+  }
+  
+  /* Tổng tiền */
+  .cart-container h3 {
+    text-align: right;
+    font-size: 1.2rem;
+    color: #000;
+    margin-bottom: 20px;
+  }
+  
+  /* Nút thanh toán */
+  .cart-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .cart-container button:hover {
+    background-color: #333;
+  }
+  

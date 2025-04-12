@@ -1,0 +1,453 @@
+/* RESET CƠ BẢN */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+  /* HEADER */
+  .header {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+  }
+  .header-top {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+  .header-logo h1 {
+    font-size: 2rem;
+    color: #FF0066; /* Màu chữ SoHOT */
+  }
+  .header-search input {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  .header-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+  }
+  .header-menu ul {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+  }
+  .header-menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+  }
+  .header-menu a:hover {
+    text-decoration: underline;
+  }
+  .header-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  .header-right img {
+    width: 25px;
+    height: 25px;
+  }
+  .cart-icon {
+    position: relative;
+  }
+  .cart-count {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    background: red;
+    color: #fff;
+    font-size: 0.7rem;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .phone-box {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .phone-box img {
+    width: 20px;
+    height: 20px;
+  }
+  .phone-box span {
+    font-weight: bold;
+    color: #000;
+  }
+  
+  /* Banner chính */
+  .header-banner {
+    text-align: center;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+  }
+  .header-banner img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* MAIN CONTENT */
+  .main-content {
+    background-color: #fff0f5; /* Màu hồng nhạt */
+    padding: 20px 0;
+  }
+  
+  /* SECTION SẢN PHẨM */
+  .product-section {
+    width: 80%;
+    margin: 0 auto 40px;
+  }
+  .section-title {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    color: #FF1493;
+    text-transform: uppercase;
+  }
+  .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+  }
+  .product-card {
+    width: calc(20% - 20px); /* 3 sản phẩm 1 hàng */
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    text-align: center;
+    overflow: hidden;
+    transition: box-shadow 0.3s;
+  }
+  .product-card:hover {
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  .product-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .product-info {
+    padding: 10px;
+  }
+  .product-name {
+    font-size: 1rem;
+    margin: 5px 0;
+    color: #333;
+  }
+  .product-price {
+    font-weight: bold;
+    color: #FF0066;
+    margin-bottom: 10px;
+  }
+  .product-actions button {
+    padding: 6px 10px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  .btn-detail {
+    background-color: #ccc;
+    color: #333;
+  }
+  .btn-buy {
+    background-color: #FF0066;
+    color: #fff;
+  }
+  .see-more {
+    text-align: right;
+    margin-top: 10px;
+  }
+  .see-more a {
+    color: #333;
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  .see-more a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Banner nhỏ dưới */
+  .bottom-banner {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+  }
+  .bottom-banner img {
+    width: calc(33.3333% - 20px);
+    height: auto;
+    display: block;
+    border: 1px solid #eee;
+    border-radius: 5px;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #333;       /* Màu nền xám đen */
+    color: #fff;                 /* Chữ trắng */
+    padding: 40px 20px;
+    border-top-left-radius: 30px;  /* Bo góc trên bên trái */
+    border-top-right-radius: 30px; /* Bo góc trên bên phải */
+  }
+  
+  /* Khung chứa các cột */
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;           /* Canh giữa */
+    display: flex;
+    flex-wrap: wrap;          /* Cho phép xuống hàng khi hẹp */
+    gap: 20px;
+  }
+  
+  /* Mỗi cột */
+  .footer-col {
+    flex: 1 1 200px;          /* Độ rộng tối thiểu 200px */
+    min-width: 200px;
+  }
+  
+  /* Tiêu đề cột */
+  .footer-col h4 {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+  }
+  
+  /* Danh sách liên kết */
+  .footer-col ul {
+    list-style: none;
+  }
+  .footer-col li {
+    margin-bottom: 5px;
+  }
+  .footer-col a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.95rem;
+  }
+  .footer-col a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Thông tin văn bản chung */
+  .footer-col p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 8px;
+  }
+  
+  /* Kết nối với chúng tôi (Email + Button) */
+  .footer-subscribe {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  .footer-subscribe input {
+    flex: 1;
+    padding: 5px 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px 0 0 3px;
+    outline: none;
+  }
+  .footer-subscribe button {
+    background-color: #FF0066;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+  }
+  .footer-subscribe button:hover {
+    background-color: #ff3366;
+  }
+  .footer-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+  }
+  /* Icon thanh toán, chứng nhận */
+  .footer-payments img {
+    margin-right: 5px;
+    vertical-align: middle;
+  }
+  .footer-cert img {
+    margin-top: 10px;
+    display: block;
+  }
+  
+  /* RESPONSIVE */
+  @media (max-width: 992px) {
+    .product-card {
+      width: calc(50% - 20px); /* 2 sản phẩm 1 hàng */
+    }
+    .bottom-banner img {
+      width: 100%;
+    }
+  }
+  @media (max-width: 576px) {
+    .header-top {
+      flex-direction: column;
+      gap: 10px;
+    }
+    .header-search {
+      order: 2;
+    }
+    .header-icons {
+      order: 3;
+      align-items: flex-start;
+    }
+    .header-menu ul {
+      flex-wrap: wrap;
+    }
+    .product-card {
+      width: 100%;
+    }
+    .header-banner img {
+      max-width: 100%;
+    }
+  }
+  h2.section-title {
+    padding-top: 20px;
+  }
+  
+  /* Khối tổng */
+  .news-section {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+  }
+  
+  /* Thanh tiêu đề trên cùng */
+  .news-header {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .news-header p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  /* Bài viết */
+  .news-item {
+    background-color: #fff;
+    margin-bottom: 20px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap; /* Cho phép xuống hàng trên mobile */
+  }
+  .news-item .news-banner {
+    background-color: #ffc0cb; /* Nền hồng cho bài lớn */
+    padding: 10px;
+    text-align: center;
+    flex: 1 1 250px;
+  }
+  .news-item .news-banner h3 {
+    color: #fff;
+    background-color: #ff66a5;
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 3px;
+    margin-bottom: 5px;
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
+  .news-item .news-banner h2 {
+    font-size: 1.3rem;
+    margin: 5px 0 10px 0;
+    color: #333;
+  }
+  .news-item .news-banner img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* Phần nội dung tin (văn bản, ngày, mô tả) */
+  .news-content {
+    flex: 1 1 300px;
+    padding: 10px;
+  }
+  .news-date span {
+    font-size: 0.85rem;
+    color: #666;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .news-date img {
+    width: 16px;
+    height: 16px;
+  }
+  .news-desc {
+    margin-top: 10px;
+    line-height: 1.4;
+    color: #333;
+  }
+  
+  /* Bài viết nhỏ */
+  .small-news {
+    align-items: flex-start;
+  }
+  .small-news .news-thumb {
+    width: 200px;
+    height: auto;
+    margin-right: 10px;
+    flex: 0 0 auto; /* Giữ nguyên kích thước */
+  }
+  .small-news .news-content {
+    flex: 1;
+  }
+  .small-news h3 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  /* Đoạn văn bản dài (Toner...) */
+  .news-article {
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    line-height: 1.5;
+  }
+  .news-article h3 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  /* RESPONSIVE */
+  @media (max-width: 768px) {
+    .news-item {
+      flex-direction: column;
+    }
+    .small-news .news-thumb {
+      width: 100%;
+      margin: 0 0 10px 0;
+    }
+  }

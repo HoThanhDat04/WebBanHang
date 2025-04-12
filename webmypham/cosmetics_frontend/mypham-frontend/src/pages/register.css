@@ -1,0 +1,103 @@
+/* RESET CƠ BẢN */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+  /* Canh giữa toàn trang theo chiều ngang/dọc bằng Flexbox */
+  body {
+    background-color: #fff0f5; /* Màu hồng nhạt */
+    min-height: 100vh;         /* Chiều cao toàn màn hình */
+    display: flex;             /* Kích hoạt Flexbox */
+    align-items: center;       /* Canh giữa dọc */
+    justify-content: center;   /* Canh giữa ngang */
+  }
+  
+/* KHUNG NGOÀI ĐỂ CĂN GIỮA */
+.register-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh; /* Không tràn vào footer */
+    background-color: #fff0f5;
+  }
+  /* KHUNG CHÍNH */
+  .register-container {
+    width: 100%;
+    max-width: 500px;           /* 🔼 Tăng từ 400px lên 500px */
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 10px;        /* Bo tròn nhẹ hơn */
+    padding: 40px 30px;         /* 🔼 Tăng padding */
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Bóng to hơn cho nổi bật */
+  }
+
+  
+  /* Tiêu đề “Đăng kí” */
+  .register-container h1 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Form đăng ký */
+  .register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Khoảng cách giữa các hàng */
+  }
+  
+  /* Mỗi hàng chứa 2 cột */
+  .form-row {
+    display: flex;
+    gap: 20px;
+  }
+  
+  /* Mỗi cột */
+  .form-group {
+    flex: 1; /* Để 2 cột chia đều */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Label */
+  .form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+    text-align: left;
+  }
+  
+  /* Input */
+  .form-group input {
+    padding: 8px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    outline: none;
+  }
+  
+  /* Nút đăng ký */
+  .btn-register {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 0;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  .btn-register:hover {
+    background-color: #333;
+  }
+  
+  /* RESPONSIVE (màn hình nhỏ) */
+  @media (max-width: 576px) {
+    .form-row {
+      flex-direction: column;
+    }
+  }
+  
